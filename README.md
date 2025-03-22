@@ -16,7 +16,7 @@ I am a passionate web developer with a strong interest in AI-powered solutions a
 Here are some of the projects I've worked on:
 
 ### Projects on GitHub
-1. **CHATGPT CLONE (NON FUNCTIONAL) (WEB BASED)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-)
+1. **CHATGPT CLONE (NON FUNCTIONAL) (WEB BASED)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOzjmv)
 2. **ChatGPT Clone (Non Functional)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-)
 
 ### Projects on CodePen
