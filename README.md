@@ -17,7 +17,7 @@ Here are some of the projects I've worked on:
 
 ### Projects on GitHub
 1. **CHATGPT CLONE (NON FUNCTIONAL) (WEB BASED)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOzjmv)
-2. **ChatGPT Clone (Non Functional)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-)
+2. **ChatGPT Clone (Non Functional)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/MYWGxmM)
 
 ### Projects on CodePen
 1. **Calculator** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/emYEaRv)
