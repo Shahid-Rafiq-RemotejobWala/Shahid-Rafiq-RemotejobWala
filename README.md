@@ -14,7 +14,7 @@ I am a passionate web developer with a strong interest in AI-powered solutions a
 
 ## Projects
 Here are some of the projects I've worked on:
-
+### Projects on CodePen
 1. **Calculator** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/emYEaRv)
 2. **Tic Tac Toe** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/zxYEGqZ)
 3. **To-Do List** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/XJWeKBo)
