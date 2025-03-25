@@ -6,6 +6,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 - [About Me](#about-me)
 - [Projects](#projects)
 - [Technologies Used](#technologies-used)
+- [Test Section](#test-section)
 - [Contact](#contact)
 
 
@@ -41,6 +42,9 @@ Here are some of the projects I've worked on:
 - **CSS3**
 - **JavaScript**
 - **Google Fonts (Poppins)**
+
+## Test Section
+This is a temporary section added to test branch functionality. It will be removed after testing.
 
 ## Contact
 Feel free to reach out to me via the following channels:
