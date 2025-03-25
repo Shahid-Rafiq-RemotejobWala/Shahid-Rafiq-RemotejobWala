@@ -1,3 +1,9 @@
+# Alternative 1
 [build]
-  publish = "."
-  command = "echo 'No build needed for static site'"
+  base = "/"
+  publish = "/"
+
+# Alternative 2 (if using subfolder)
+[build]
+  base = "src"
+  publish = "src"
