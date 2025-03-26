@@ -1,4 +1,4 @@
-# Shahid Rafiq - Portfolio Website
+# Shahid Rafiq RemotejobWala - Portfolio Website
 
 A futuristic, professional portfolio website showcasing my projects, skills, and contact information. Built with modern web technologies and designed with a premium aesthetic.
 
@@ -44,9 +44,9 @@ A futuristic, professional portfolio website showcasing my projects, skills, and
 ## Deployment
 
 This portfolio is deployed on Netlify:  
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-DEPLOYMENT-ID/deploy-status)](https://app.netlify.com/sites/YOUR-SITE-NAME/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1234abcd-5678-ef90-1234-567890abcdef/deploy-status)](https://app.netlify.com/sites/shahid-rafiq-remotejobwala/deploys)
 
-Live Demo: [https://your-portfolio-url.netlify.app](https://your-portfolio-url.netlify.app)
+Live Demo: [https://your-portfolio-url.netlify.app](https://shahid-rafiq-remotejobwala.netlify.app/)
 
 ## Installation
 
