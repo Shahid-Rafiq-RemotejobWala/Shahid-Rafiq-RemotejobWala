@@ -1,26 +1,30 @@
-# Shahid Rafiq RemotejobWala | Portfolio
+# Shahid Rafiq - Portfolio Website
 
-Welcome to my personal portfolio website! This project showcases my skills, projects, and contact information as a web developer and AI enthusiast.
+A futuristic, professional portfolio website showcasing my projects, skills, and contact information. Built with modern web technologies and designed with a premium aesthetic.
 
-## Table of Contents
-- [About Me](#about-me)
-- [Projects](#projects)
-- [Technologies Used](#technologies-used)
-- [Test Section](#test-section)
-- [Contact](#contact)
+## Features
 
+- **Futuristic UI Design**: Glassmorphism effects, gradient accents, and smooth animations
+- **Responsive Layout**: Fully responsive across all device sizes
+- **Project Showcase**: Grid display of all CodePen and GitHub projects
+- **Interactive Elements**: Smooth scrolling, hover effects, and section animations
+- **Performance Optimized**: Fast loading with minimal dependencies
 
-## About Me
-I am a passionate web developer with a strong interest in AI-powered solutions and interactive web applications. I specialize in modern web technologies, creating clean, elegant, and efficient digital experiences.
+## Technologies Used
 
-## Projects
-Here are some of the projects I've worked on:
+- HTML5
+- CSS3 (with CSS Variables)
+- JavaScript (ES6+)
+- Font Awesome Icons
+- Google Fonts (Inter & Space Grotesk)
 
-### Projects on GitHub
+## Projects Included
+
+### GitHub Projects
 1. **CHATGPT CLONE (NON FUNCTIONAL) (WEB BASED)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOzjmv)
 2. **ChatGPT Clone (Non Functional)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/MYWGxmM)
 
-### Projects on CodePen
+### CodePen Projects
 1. **Calculator** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/emYEaRv)
 2. **Tic Tac Toe** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/zxYEGqZ)
 3. **To-Do List** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/XJWeKBo)
@@ -37,17 +41,21 @@ Here are some of the projects I've worked on:
 14. **Memory Card Game** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWOBqG)
 15. **Fruit Catcher** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/bNGYPje)
 
-## Technologies Used
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Google Fonts (Poppins)**
+## Deployment
 
-## Test Section
-This is a temporary section added to test branch functionality. It will be removed after testing.
+This portfolio is deployed on Netlify:  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-DEPLOYMENT-ID/deploy-status)](https://app.netlify.com/sites/YOUR-SITE-NAME/deploys)
+
+Live Demo: [https://your-portfolio-url.netlify.app](https://your-portfolio-url.netlify.app)
+
+## Installation
+
+No installation required - this is a static website. Simply clone the repository or download the files to view locally:
 
 ## Contact
 Feel free to reach out to me via the following channels:
 - **Email**: [msrafiq310@gmail.com](mailto:msrafiq310@gmail.com)
 - **LinkedIn**: [Shahid Rafiq RemotejobWala](https://www.linkedin.com/in/shahid-rafiq-remotejobwala)
 - **Facebook**: [Shahid Rafiq RemotejobWala](https://www.facebook.com/profile.php?id=100004719165786)
+- **GitHub**: [Shahid Rafiq RemotejobWala](https://github.com/Shahid-Rafiq-RemotejobWala)
+- **CodePen**: [Shahid Rafiq RemotejobWala](https://codepen.io/Shahid-Rafiq-RemotejobWala)
