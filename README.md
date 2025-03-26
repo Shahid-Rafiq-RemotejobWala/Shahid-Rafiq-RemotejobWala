@@ -46,7 +46,7 @@ A futuristic, professional portfolio website showcasing my projects, skills, and
 This portfolio is deployed on Netlify:  
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1234abcd-5678-ef90-1234-567890abcdef/deploy-status)](https://app.netlify.com/sites/shahid-rafiq-remotejobwala/deploys)
 
-Live Demo: [https://your-portfolio-url.netlify.app](https://shahid-rafiq-remotejobwala.netlify.app/)
+Live Demo: (https://shahid-rafiq-remotejobwala.netlify.app/)
 
 ## Installation
 
