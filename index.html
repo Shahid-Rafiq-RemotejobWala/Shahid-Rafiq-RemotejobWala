@@ -2,26 +2,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Shahid Rafiq RemotejobWala | AI & Web Developer</title>
-    <meta name="description" content="Professional portfolio of Shahid Rafiq RemotejobWala - Web Developer & AI Enthusiast">
+    <title>Shahid Rafiq | AI & Web Developer</title>
+    <meta name="description" content="Professional portfolio of Shahid Rafiq - Web Developer & AI Enthusiast">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #00f0ff;
-            --primary-dark: #00a8b5;
-            --secondary: #7928ca;
-            --dark: #0a0a0a;
-            --darker: #050505;
-            --light: #f8f9fa;
-            --gray: #2d2d2d;
-            --card-bg: rgba(15, 15, 15, 0.7);
-            --glass: rgba(255, 255, 255, 0.05);
+            /* Premium Dark Theme Colors */
+            --primary: #06b6d4;      /* Cyan */
+            --primary-dark: #0891b2; 
+            --secondary: #6366f1;    /* Indigo */
+            --accent: #f59e0b;       /* Gold/Amber for featured items */
+            --dark: #0f172a;         /* Slate 900 */
+            --darker: #020617;       /* Slate 950 */
+            --light: #f8fafc;        /* Slate 50 */
+            --gray: #334155;         /* Slate 700 */
+            --card-bg: rgba(30, 41, 59, 0.6); /* Slate 800 with opacity */
+            --glass: rgba(255, 255, 255, 0.08);
             --max-width: 1200px;
-            --border-radius: 12px;
-            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --border-radius: 16px;
+            --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         * {
@@ -34,16 +36,23 @@
         html, body {
             overflow-x: hidden;
             width: 100%;
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--light);
-            background-color: var(--dark);
+            background-color: var(--darker);
+            /* Tech Grid Background */
             background-image: 
-                radial-gradient(circle at 25% 25%, rgba(121, 40, 202, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 75% 75%, rgba(0, 240, 255, 0.15) 0%, transparent 50%);
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                radial-gradient(circle at 15% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+                radial-gradient(circle at 85% 30%, rgba(6, 182, 212, 0.15) 0%, transparent 40%);
+            background-size: 40px 40px, 40px 40px, 100% 100%, 100% 100%;
+            background-position: center center;
+            background-attachment: fixed;
             min-height: 100vh;
         }
 
@@ -51,33 +60,46 @@
             max-width: var(--max-width);
             margin: 0 auto;
             padding: 0 2rem;
-            overflow-x: hidden;
+            position: relative;
+            z-index: 1;
         }
 
         /* Typography */
         h1, h2, h3, h4 {
             font-family: 'Space Grotesk', sans-serif;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1rem;
+            letter-spacing: -0.02em;
         }
 
         h1 {
-            font-size: clamp(2.2rem, 5vw, 4rem);
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            background: linear-gradient(135deg, #fff 0%, var(--primary) 50%, var(--secondary) 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+        }
+
+        .subtitle {
+            font-size: 1.4rem;
+            color: var(--primary);
+            font-weight: 500;
             margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         h2 {
-            font-size: clamp(1.8rem, 3vw, 2.5rem);
-            color: var(--primary);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            color: #fff;
             position: relative;
-            padding-bottom: 0.5rem;
-            margin-top: 3rem;
-            margin-bottom: 2rem;
+            padding-bottom: 0.8rem;
+            margin-top: 4rem;
+            margin-bottom: 2.5rem;
+            display: inline-block;
         }
 
         h2::after {
@@ -85,26 +107,35 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            border-radius: 3px;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), transparent);
+            border-radius: 4px;
+        }
+
+        h2 span {
+            color: var(--primary);
+            margin-right: 10px;
         }
 
         h3 {
-            font-size: 1.5rem;
-            color: var(--light);
+            font-size: 1.6rem;
+            color: #fff;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--secondary);
+            padding-left: 15px;
         }
 
         h4 {
-            font-size: 1.25rem;
-            color: var(--light);
+            font-size: 1.3rem;
+            color: #fff;
         }
 
         p {
             margin-bottom: 1.5rem;
-            color: rgba(255, 255, 255, 0.8);
-            font-weight: 300;
+            color: rgba(248, 250, 252, 0.75);
+            font-weight: 400;
             font-size: 1.1rem;
         }
 
@@ -115,56 +146,71 @@
         }
 
         a:hover {
-            color: var(--primary-dark);
-            text-decoration: none;
+            color: #fff;
         }
 
         /* Layout */
         header {
-            padding: 4rem 0 3rem;
+            padding: 6rem 0 4rem;
             position: relative;
-            overflow: hidden;
-        }
-
-        header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(0, 240, 255, 0.1) 0%, transparent 70%);
-            z-index: -1;
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: translate(0, 0);
-            }
-            50% {
-                transform: translate(10%, 10%);
-            }
-            100% {
-                transform: translate(0, 0);
-            }
         }
 
         /* Cards */
         .card {
             background: var(--card-bg);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--glass);
             border-radius: var(--border-radius);
-            padding: 2rem;
+            padding: 2.5rem;
             margin-bottom: 2rem;
             transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, transparent 100%);
+            pointer-events: none;
         }
 
         .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            border-color: rgba(0, 240, 255, 0.3);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(6, 182, 212, 0.4);
+        }
+
+        /* Featured App Card - Special Styling */
+        .featured-card {
+            border: 1px solid rgba(245, 158, 11, 0.4);
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(2, 6, 23, 0.9));
+            box-shadow: 0 10px 30px rgba(245, 158, 11, 0.1);
+        }
+
+        .featured-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(245, 158, 11, 0.2);
+        }
+
+        .featured-badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         /* Buttons & Links */
@@ -172,137 +218,163 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 500;
+            gap: 0.6rem;
+            padding: 0.8rem 1.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
             transition: var(--transition);
             border: none;
             cursor: pointer;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .btn-primary {
-            background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-            color: var(--darker);
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
         }
 
         .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 240, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+            color: #fff;
+        }
+
+        .btn-featured {
+            background: linear-gradient(135deg, var(--accent), #d97706);
+            color: #000;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+
+        .btn-featured:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.5);
+            color: #000;
         }
 
         .btn-outline {
-            background: transparent;
-            color: var(--primary);
-            border: 1px solid var(--primary);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--light);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
         }
 
         .btn-outline:hover {
-            background: rgba(0, 240, 255, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .link-icon {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        /* Project Links */
-        .project-links {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            flex-wrap: wrap;
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-3px);
+            color: #fff;
         }
 
         /* Tech List */
         .tech-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 0.8rem;
             margin: 1.5rem 0;
         }
 
         .tech-item {
-            background: rgba(0, 240, 255, 0.1);
+            background: rgba(15, 23, 42, 0.8);
             color: var(--primary);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
+            padding: 0.4rem 1.2rem;
+            border-radius: 6px;
             font-size: 0.85rem;
             font-weight: 500;
-            border: 1px solid rgba(0, 240, 255, 0.2);
-        }
-
-        /* Contact Links */
-        .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-
-        .contact-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.25rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: var(--border-radius);
+            border: 1px solid rgba(6, 182, 212, 0.2);
             transition: var(--transition);
         }
 
-        .contact-link:hover {
-            background: rgba(0, 240, 255, 0.1);
+        .tech-item:hover {
+            background: rgba(6, 182, 212, 0.1);
+            border-color: var(--primary);
             transform: translateY(-2px);
+        }
+
+        .featured-card .tech-item {
+            color: var(--accent);
+            border-color: rgba(245, 158, 11, 0.2);
+        }
+        
+        .featured-card .tech-item:hover {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: var(--accent);
+        }
+
+        /* Project Links */
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
         }
 
         /* Projects Grid */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.8rem;
             margin-top: 2rem;
-            width: 100%;
         }
 
         .project-card {
-            background: var(--card-bg);
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            transition: var(--transition);
-            border: 1px solid var(--glass);
-            width: 100%;
-            margin: 0;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            border-color: rgba(0, 240, 255, 0.3);
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .project-card-content {
-            padding: 1.5rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
         }
 
-        .project-card h4 {
-            margin-bottom: 0.5rem;
+        .project-card .project-links {
+            margin-top: auto;
+            padding-top: 1.5rem;
         }
 
-        .project-card p {
-            font-size: 0.95rem;
-            margin-bottom: 1rem;
+        /* Contact Links */
+        .contact-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8rem;
+            padding: 1rem;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--glass);
+            border-radius: 10px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .contact-link i {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .contact-link:hover {
+            background: rgba(6, 182, 212, 0.1);
+            border-color: var(--primary);
+            transform: translateY(-4px);
         }
 
         /* Section Animation */
         section {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
         section.visible {
@@ -314,89 +386,60 @@
         footer {
             text-align: center;
             padding: 3rem 0;
-            margin-top: 4rem;
+            margin-top: 5rem;
             border-top: 1px solid var(--gray);
+            background: rgba(2, 6, 23, 0.8);
         }
 
         .footer-text {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .container {
-                padding: 0 1rem;
+                padding: 0 1.5rem;
             }
             
             header {
-                padding: 2rem 0 1.5rem;
+                padding: 4rem 0 2rem;
             }
             
-            .card {
-                padding: 1.5rem;
-            }
-            
-            h1 {
-                font-size: 2.2rem;
-            }
-            
-            h2 {
-                font-size: 1.8rem;
-                margin-top: 2rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .project-links {
-                flex-direction: column;
-                gap: 0.75rem;
+            .card, .project-card-content {
+                padding: 1.8rem;
             }
             
             .btn {
                 width: 100%;
-                justify-content: center;
             }
 
-            .projects-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .contact-links {
+            .project-links {
                 flex-direction: column;
                 gap: 1rem;
             }
 
-            .project-card-content {
-                padding: 1.25rem;
-            }
-        }
-
-        @media (min-width: 769px) {
-            header::before {
-                animation: pulse 15s infinite alternate;
+            .projects-grid {
+                grid-template-columns: 1fr;
             }
         }
 
         /* Disable hover effects on touch devices */
         @media (hover: none) {
-            .card:hover, .btn:hover, .contact-link:hover {
+            .card:hover, .btn:hover, .contact-link:hover, .tech-item:hover {
                 transform: none !important;
+                box-shadow: none !important;
             }
-        }
-
-        /* Prevent mobile zoom on input */
-        input, select, textarea {
-            font-size: 16px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Shahid Rafiq RemotejobWala</h1>
+            <h1>Shahid Rafiq</h1>
             <p class="subtitle">Web Developer & AI Enthusiast</p>
-            <p>Creating cutting-edge digital experiences with modern web technologies and AI-powered solutions.</p>
+            <p style="font-size: 1.2rem; max-width: 600px;">Creating cutting-edge digital experiences with modern web technologies and AI-powered solutions.</p>
         </header>
 
         <section id="about-me">
@@ -411,6 +454,23 @@
             <h2><span class="fas fa-code"></span> Projects</h2>
             <p>Explore my collection of innovative projects showcasing my skills in web development and interactive design.</p>
 
+            <h3>Featured Web Applications</h3>
+            <div class="card featured-card">
+                <span class="featured-badge"><i class="fas fa-star"></i> Highlight Project</span>
+                <h4>المواريث Al-Mawarith: Islamic Inheritance Calculator</h4>
+                <p>A comprehensive inheritance calculator based on Classical Fiqh — Hanafi School. Designed to calculate and solve practical Islamic inheritance distributions (Ilm al-Mirath) accurately and efficiently.</p>
+                <div class="tech-list">
+                    <span class="tech-item">Web App</span>
+                    <span class="tech-item">Islamic Finance</span>
+                    <span class="tech-item">Hanafi Fiqh</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://mirath-ggc-bwn.lovable.app/" target="_blank" class="btn btn-featured">
+                        <span class="fas fa-external-link-alt"></span> Launch Application
+                    </a>
+                </div>
+            </div>
+
             <h3>GitHub Projects</h3>
             <div class="card">
                 <h4>ChatGPT Clone (Web Based)</h4>
@@ -422,10 +482,10 @@
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-" target="_blank" class="btn btn-outline">
-                        <span class="fab fa-github"></span> GitHub
+                        <span class="fab fa-github"></span> Source Code
                     </a>
-                    <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOzjmv" target="_blank" class="btn btn-outline">
-                        <span class="fab fa-codepen"></span> CodePen
+                    <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOzjmv" target="_blank" class="btn btn-primary">
+                        <span class="fas fa-play"></span> Live Demo
                     </a>
                 </div>
             </div>
@@ -440,205 +500,190 @@
                 </div>
                 <div class="project-links">
                     <a href="https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-" target="_blank" class="btn btn-outline">
-                        <span class="fab fa-github"></span> GitHub
+                        <span class="fab fa-github"></span> Source Code
                     </a>
-                    <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/MYWGxmM" target="_blank" class="btn btn-outline">
-                        <span class="fab fa-codepen"></span> CodePen
+                    <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/MYWGxmM" target="_blank" class="btn btn-primary">
+                        <span class="fas fa-play"></span> Live Demo
                     </a>
                 </div>
             </div>
 
             <h3>CodePen Projects</h3>
             <div class="projects-grid">
-                <!-- Calculator -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Calculator</h4>
                         <p>A fully functional calculator with a sleek, modern interface and responsive design.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/emYEaRv" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/emYEaRv" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tic Tac Toe -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Tic Tac Toe Game</h4>
                         <p>Classic game with a futuristic UI and smooth gameplay mechanics.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/zxYEGqZ" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/zxYEGqZ" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- To-Do List -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Productive To-Do List</h4>
                         <p>Task management application with intuitive controls and persistent storage.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/XJWeKBo" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/XJWeKBo" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Quiz Game -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Dynamic Quiz Game</h4>
                         <p>Interactive quiz platform with score tracking and responsive feedback.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/vEYeyya" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/vEYeyya" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Weather App -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Weather Application</h4>
                         <p>Real-time weather data visualization with clean, informative displays.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ZYEXrEb" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ZYEXrEb" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Currency Converter -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Currency Converter</h4>
                         <p>Financial tool for converting between different world currencies.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ogNGJgX" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ogNGJgX" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Stopwatch -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Precision Stopwatch</h4>
                         <p>Accurate timekeeping tool with lap functionality and clean interface.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWqzeP" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWqzeP" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Alarm Clock -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Alarm Clock</h4>
                         <p>Functional alarm clock with multiple alarm support and intuitive UI.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ByawXwY" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ByawXwY" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Calendar App -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Calendar App</h4>
                         <p>Interactive monthly calendar with event tracking capabilities.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/PwoOWRZ" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/PwoOWRZ" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Reminder App -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Reminder App</h4>
                         <p>Never miss important tasks with this intuitive reminder application.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOXzoR" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOXzoR" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Guess the Number -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Guess the Number</h4>
                         <p>Interactive number guessing game with hints and score tracking.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/GgROdeO" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/GgROdeO" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Word Scramble -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Word Scramble</h4>
                         <p>Challenging word game that tests vocabulary and problem-solving skills.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/KwKyeoK" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/KwKyeoK" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Rock, Paper, Scissors -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Rock, Paper, Scissors</h4>
                         <p>Classic game with modern UI and computer opponent logic.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/wBvPxKv" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/wBvPxKv" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Memory Card Game -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Memory Card Game</h4>
                         <p>Concentration game that tests memory with visual matching.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWOBqG" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWOBqG" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Fruit Catcher -->
                 <div class="project-card card">
                     <div class="project-card-content">
                         <h4>Fruit Catcher Game</h4>
                         <p>Interactive game with dynamic elements and score system.</p>
                         <div class="project-links">
-                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/bNGYPje" target="_blank" class="btn btn-primary">
+                            <a href="https://codepen.io/Shahid-Rafiq-RemotejobWala/full/bNGYPje" target="_blank" class="btn btn-outline">
                                 <span class="fas fa-external-link-alt"></span> View Project
                             </a>
                         </div>
@@ -687,12 +732,14 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            <p class="footer-text">© <span id="year"></span> Shahid Rafiq RemotejobWala. All rights reserved.</p>
-            <p class="footer-text">Built with passion and deployed with Netlify.</p>
-        </footer>
     </div>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">© <span id="year"></span> Shahid Rafiq. All rights reserved.</p>
+            <p class="footer-text">Built with passion and deployed with Netlify.</p>
+        </div>
+    </footer>
 
     <script>
         // Set current year in footer
@@ -701,39 +748,24 @@
         // Mobile detection
         const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-        // Optimized Intersection Observer
+        // Optimized Intersection Observer for Scroll Animations
         const observerOptions = {
             threshold: isMobile ? 0.05 : 0.1,
-            rootMargin: '0px 0px -25px 0px'
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    if (isMobile) {
-                        observer.unobserve(entry.target);
-                    }
+                    // Stop observing once visible for better performance
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);
 
         document.querySelectorAll('section').forEach(section => {
             observer.observe(section);
-        });
-
-        // Smooth scrolling with mobile consideration
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - (isMobile ? 20 : 50),
-                        behavior: 'smooth'
-                    });
-                }
-            });
         });
     </script>
 </body>
