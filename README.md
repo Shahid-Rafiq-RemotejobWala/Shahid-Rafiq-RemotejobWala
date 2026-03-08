@@ -1,61 +1,73 @@
-# Shahid Rafiq RemotejobWala - Portfolio Website
+# 🚀 Shahid Rafiq | Personal Portfolio
 
-A futuristic, professional portfolio website showcasing my projects, skills, and contact information. Built with modern web technologies and designed with a premium aesthetic.
+![Portfolio Preview](https://via.placeholder.com/1200x630/0f172a/06b6d4?text=Shahid+Rafiq+-+Web+Developer+%26+AI+Enthusiast)
 
-## Features
+Welcome to my personal portfolio repository! I am a passionate Web Developer and AI Enthusiast specializing in creating interactive, cutting-edge digital experiences using modern web technologies. 
 
-- **Futuristic UI Design**: Glassmorphism effects, gradient accents, and smooth animations
-- **Responsive Layout**: Fully responsive across all device sizes
-- **Project Showcase**: Grid display of all CodePen and GitHub projects
-- **Interactive Elements**: Smooth scrolling, hover effects, and section animations
-- **Performance Optimized**: Fast loading with minimal dependencies
+🌐 **Live Demo:** [Insert Your Live Website URL Here]
 
-## Technologies Used
+---
 
-- HTML5
-- CSS3 (with CSS Variables)
-- JavaScript (ES6+)
-- Font Awesome Icons
-- Google Fonts (Inter & Space Grotesk)
+## ✨ What's New (Latest Update)
 
-## Projects Included
+The portfolio has been completely revamped with a **Premium Modern Dark Theme**:
+- **Tech Grid Background:** A stunning deep slate (`#0f172a`) background with an animated gradient tech-grid.
+- **Glassmorphism Design:** Beautiful translucent cards with blur effects and 3D hover animations.
+- **Vibrant Highlights:** Cyan (`#06b6d4`), Indigo (`#6366f1`), and Gold/Amber accents for a professional contrast.
+- **Scroll Animations:** Optimized Intersection Observer API for smooth fade-in animations as you scroll.
+
+---
+
+## 🌟 Featured Project
+
+### 🕌 المواريث (Al-Mawarith): Islamic Inheritance Calculator
+A comprehensive, highly accurate inheritance calculator based on **Classical Fiqh — Hanafi School**. Designed to solve complex practical Islamic inheritance distributions (*Ilm al-Mirath*) efficiently.
+- **Live App:** [Al-Mawarith on Lovable](https://mirath-ggc-bwn.lovable.app/)
+- **Domain:** Web App, Islamic Finance, Hanafi Fiqh
+
+---
+
+## 💻 Other Projects
 
 ### GitHub Projects
-1. **CHATGPT CLONE (NON FUNCTIONAL) (WEB BASED)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOzjmv)
-2. **ChatGPT Clone (Non Functional)** - [View on GitHub](https://github.com/Shahid-Rafiq-RemotejobWala/CHATGPT-CLONE-NON-FUNCTIONAL-WEB-BASED-) [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/MYWGxmM)
+* **ChatGPT Clone (Web Based):** A responsive, non-functional UI clone of ChatGPT demonstrating modern interface design principles.
+* **WhatsApp Clone (Web Based):** A responsive, non-functional UI clone of WhatsApp demonstrating modern interface design principles.
 
-### CodePen Projects
-1. **Calculator** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/emYEaRv)
-2. **Tic Tac Toe** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/zxYEGqZ)
-3. **To-Do List** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/XJWeKBo)
-4. **Quiz Game** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/vEYeyya)
-5. **Weather App** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ZYEXrEb)
-6. **Currency Converter** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ogNGJgX)
-7. **Stopwatch** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWqzeP)
-8. **Alarm Clock** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/ByawXwY)
-9. **Calendar App** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/PwoOWRZ)
-10. **Reminder App** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/gbOXzoR)
-11. **Guess the Number** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/GgROdeO)
-12. **Word Scramble** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/KwKyeoK)
-13. **Rock, Paper, Scissors** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/wBvPxKv)
-14. **Memory Card Game** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/QwWOBqG)
-15. **Fruit Catcher** - [View on CodePen](https://codepen.io/Shahid-Rafiq-RemotejobWala/full/bNGYPje)
+### CodePen Mini-Projects (Interactive Apps & Games)
+* 🧮 **Productivity Tools:** Calculator, To-Do List, Weather App, Currency Converter, Calendar, Stopwatch, Alarm Clock.
+* 🎮 **JavaScript Games:** Tic Tac Toe, Dynamic Quiz Game, Guess the Number, Word Scramble, Rock Paper Scissors, Memory Card Game, Fruit Catcher.
 
-## Deployment
+---
 
-This portfolio is deployed on Netlify:  
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1234abcd-5678-ef90-1234-567890abcdef/deploy-status)](https://app.netlify.com/sites/shahid-rafiq-remotejobwala/deploys)
+## 🛠️ Technologies Used
 
-Live Demo: (https://shahid-rafiq-remotejobwala.netlify.app/)
+This portfolio is built entirely without heavy frameworks to ensure maximum performance and clean code:
 
-## Installation
+* **HTML5** (Semantic structure)
+* **CSS3** (Custom properties/variables, Flexbox, Grid, Glassmorphism, CSS Animations)
+* **Vanilla JavaScript (ES6+)** (DOM manipulation, Intersection Observer API for scroll animations)
+* **Font Awesome** (Icons)
+* **Google Fonts** (Inter & Space Grotesk)
 
-No installation required - this is a static website. Simply clone the repository or download the files to view locally:
+---
 
-## Contact
-Feel free to reach out to me via the following channels:
-- **Email**: [msrafiq310@gmail.com](mailto:msrafiq310@gmail.com)
-- **LinkedIn**: [Shahid Rafiq RemotejobWala](https://www.linkedin.com/in/shahid-rafiq-remotejobwala)
-- **Facebook**: [Shahid Rafiq RemotejobWala](https://www.facebook.com/profile.php?id=100004719165786)
-- **GitHub**: [Shahid Rafiq RemotejobWala](https://github.com/Shahid-Rafiq-RemotejobWala)
-- **CodePen**: [Shahid Rafiq RemotejobWala](https://codepen.io/Shahid-Rafiq-RemotejobWala)
+## 📱 Responsiveness
+
+The website is fully responsive and optimized for all devices:
+- Perfect rendering on mobile, tablet, and desktop screens.
+- Touch-friendly interfaces with disabled hover states on mobile devices to prevent sticky styling issues.
+
+---
+
+## 📫 Let's Connect
+
+I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. 
+
+- **Email:** [msrafiq310@gmail.com](mailto:msrafiq310@gmail.com)
+- **LinkedIn:** [Shahid Rafiq](https://www.linkedin.com/in/shahid-rafiq-remotejobwala)
+- **GitHub:** [@Shahid-Rafiq-RemotejobWala](https://github.com/Shahid-Rafiq-RemotejobWala)
+- **CodePen:** [Shahid-Rafiq-RemotejobWala](https://codepen.io/Shahid-Rafiq-RemotejobWala)
+- **Facebook:** [Profile](https://www.facebook.com/profile.php?id=100004719165786)
+
+---
+*© 2026 Shahid Rafiq. Built with passion and deployed with Netlify.*
